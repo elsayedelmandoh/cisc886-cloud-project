@@ -1,0 +1,27 @@
+# environment
+.env
+.venv/
+venv/
+
+# python
+__pycache__/
+*.pyc
+*.pyo
+dist/
+*.egg-info/
+
+# IDE
+.vscode/
+.idea/
+
+# data and logs
+data/
+logs/
+*.log
+
+# docs and internal files
+docs/.internal/
+
+# tools
+.opencode/
+AGENTS.md
