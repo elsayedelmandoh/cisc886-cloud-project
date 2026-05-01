@@ -44,9 +44,3 @@ The notebook automatically loads these via `os.getenv()` (same pattern as `src/c
 08. Generate fine-tuned outputs
 09. Compare base vs fine-tuned
 10. Export to GGUF > upload to S3
-
-## Troubleshooting
-
-**Out of Memory**: Reduce batch size or training samples
-**S3 Upload Fails**: Verify AWS credentials are correct
-**HF Token Issues**: Ensure token has read access to dataset
