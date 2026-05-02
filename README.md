@@ -1,5 +1,10 @@
 # cisc 886 cloud project - cloud-based conversational chatbot
 
+[![linkedin](https://img.shields.io/badge/natalie-linkedin-0077b5?style=for-the-badge&logo=linkedin&logocolor=white)](https://www.linkedin.com/in/elsayed-elmandoh-b5849a1b8/)
+[![linkedin](https://img.shields.io/badge/elsayed-linkedin-0077b5?style=for-the-badge&logo=linkedin&logocolor=white)](https://www.linkedin.com/in/elsayed-elmandoh-b5849a1b8/)
+[![linkedin](https://img.shields.io/badge/post-linkedin-0077b5?style=for-the-badge&logo=linkedin&logocolor=white)]()
+[![twitter](https://img.shields.io/badge/x-1da1f2?style=for-the-badge&logo=x&logocolor=white)](https://x.com/aangpy)
+
 <p align="center">
   <img src="notebooks/07-web-interface/07-openwebui.png" alt="system architecture diagram" width="80%">
 </p>
