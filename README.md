@@ -72,7 +72,7 @@ cisc886-cloud-project/
 │   │   ├── helpers.py              # shared helper functions
 │   │   └── upload_data_to_s3.py    # s3 upload utilities
 │   ├── preprocessing/
-│       ├── __init__.py
+│   |   ├── __init__.py
 │   │   └── preprocess_emr.py       # emr preprocessing scripts
 │   └── infrastructure/
 │       ├── __init__.py
