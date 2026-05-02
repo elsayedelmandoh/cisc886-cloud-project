@@ -27,6 +27,7 @@
 | Source | S3 (parquet files) |
 | Format | Parquet |
 | S3 Location | s3://25xrvl-s3/smol_ids_data/ |
+| License | Apache 2.0 |
 
 ### languages selected
 

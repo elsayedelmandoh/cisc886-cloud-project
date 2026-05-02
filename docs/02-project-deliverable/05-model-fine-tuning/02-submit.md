@@ -32,7 +32,7 @@
    - Fine-tuned model response
    - Side-by-side table showing improvement
 
-### Optional (encouraged)
+### extra
 
 - Training loss curve
 - Hyperparameter table in report

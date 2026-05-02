@@ -9,7 +9,7 @@
 | Create VPC 25xrvl-VPC | Member 1 | Terraform or console screenshot |
 | Create S3 bucket 25xrvl-s3-project | Member 1 | S3 console screenshot |
 | Download bigcode/the-stack-smol | Member 2 | Local dataset |
-| Filter by language (Python, JS, Java, Go) | Member 2 | 300K filtered samples |
+| Filter by language (Python, JS, Go) | Member 2 | 300K filtered samples |
 
 ### Day 2: Data Preprocessing with EMR
 
