@@ -1,9 +1,7 @@
 # cisc 886 cloud project - cloud-based conversational chatbot
 
 <p align="center">
-  <img src="notebooks/01-system-architecture/01-system-architecture-diagram.jpeg" alt="project name — pos results" width="45%">
-  &nbsp; &nbsp;
-  <img src="notebooks/07-web-interface/07-openwebui.png" alt="project name — neg results" width="45%">
+  <img src="notebooks/07-web-interface/07-openwebui.png" alt="system architecture diagram" width="80%">
 </p>
 
 ## table of contents
@@ -770,6 +768,12 @@ elsayed elmandoh - nlp engineer
 [![twitter](https://img.shields.io/badge/x-1da1f2?style=for-the-badge&logo=x&logocolor=white)](https://x.com/aangpy)
 [![linkedin](https://img.shields.io/badge/linkedin-0077b5?style=for-the-badge&logo=linkedin&logocolor=white)](https://www.linkedin.com/in/elsayed-elmandoh-b5849a1b8/)
 [![linkedin-post](https://img.shields.io/badge/linkedin%20post-0077b5?style=for-the-badge&logo=linkedin&logocolor=white)](https://www.linkedin.com/posts/elsayed-elmandoh-b5849a1b8_can-an-air-gapped-ai-tutor-answer-curriculum-activity-7438317665930067968-tdof?utm_source=share&utm_medium=member_desktop&rcm=acoaadkeevqbht4xomwiqtxdmyqjijs81wue3sc)
+
+<p align="center">
+  <img src="docs/results/res1.png" alt="project name — pos results" width="45%">
+  &nbsp; &nbsp;
+  <img src="docs/results/res2.png" alt="project name — neg results" width="45%">
+</p>
 
 ---
 
