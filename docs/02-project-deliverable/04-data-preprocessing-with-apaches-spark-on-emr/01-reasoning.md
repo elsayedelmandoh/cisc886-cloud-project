@@ -48,7 +48,7 @@ spark.stop()
 ## required screenshots
 
 - [ ] EMR console screenshot showing cluster configuration
-- [ ] EMR console screenshot showing cluster in **Terminated state** (CRITICAL)
+- [ ] EMR console screenshot showing cluster in **Terminated state** 
 - [ ] S3 screenshot showing output files (train/, val/, test/)
 - [ ] EDA: Token length distribution histogram
 - [ ] EDA: Language distribution chart
