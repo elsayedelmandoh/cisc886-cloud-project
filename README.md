@@ -3,8 +3,9 @@
 [![linkedin](https://img.shields.io/badge/natalie-linkedin-0077b5?style=for-the-badge&logo=linkedin&logocolor=white)](https://www.linkedin.com/in/nataliemonged/)
 [![linkedin](https://img.shields.io/badge/elsayed-linkedin-0077b5?style=for-the-badge&logo=linkedin&logocolor=white)](https://www.linkedin.com/in/elsayed-elmandoh-b5849a1b8/)
 [![linkedin](https://img.shields.io/badge/manar-linkedin-0077b5?style=for-the-badge&logo=linkedin&logocolor=white)](https://www.linkedin.com/in/manar-elshenawy-/)
-[![linkedin](https://img.shields.io/badge/post-linkedin-0077b5?style=for-the-badge&logo=linkedin&logocolor=white)](https://www.linkedin.com/in/nataliemonged/)
+[![linkedin-post](https://img.shields.io/badge/linkedin%20post-0077b5?style=for-the-badge&logo=linkedin&logocolor=white)]()
 [![twitter](https://img.shields.io/badge/x-1da1f2?style=for-the-badge&logo=x&logocolor=white)](https://x.com/aangpy)
+
 
 <p align="center">
   <img src="notebooks/07-web-interface/07-openwebui.png" alt="system architecture diagram" width="80%">
@@ -26,6 +27,9 @@
 12. [cloud services](#12-cloud-services)
 13. [model and dataset](#13-model-and-dataset)
 14. [troubleshooting](#14-troubleshooting)
+15. [additional resources](#15-additional-resources)
+16. [contributing](#contributing)
+17. [author](#author)
 
 ---
 
@@ -743,17 +747,7 @@ python app.py config
 
 ---
 
-## usage
-
-to run the application locally, execute the following command:
-
-```bash
-python app.py
-```
-
-once running, open the local url printed in your terminal
-
-## contributing
+## 16. contributing
 
 contributions are welcome! if you would like to improve this project, please follow these steps:
 
@@ -763,24 +757,11 @@ contributions are welcome! if you would like to improve this project, please fol
 4. push to your fork (git push origin feature/my-new-feature)
 5. open a pull request.
 
-## author
+## 17. author
 
-elsayed elmandoh - nlp engineer
-
-* connect on linkedin & x [linktree](https://linktr.ee/elsayedelmandoh)
-
-[![github](https://img.shields.io/badge/github-sentiment__sleuth-100000?style=for-the-badge&logo=github&logocolor=white)](https://github.com/elsayedelmandoh/sentiment-sleuth)
-[![huggingface](https://img.shields.io/badge/space-hugging%20face-yellow?style=for-the-badge&logo=huggingface&logocolor=black)](https://elsayedelmandoh-sentiment-sleuth.hf.space)
-[![twitter](https://img.shields.io/badge/x-1da1f2?style=for-the-badge&logo=x&logocolor=white)](https://x.com/aangpy)
-[![linkedin](https://img.shields.io/badge/linkedin-0077b5?style=for-the-badge&logo=linkedin&logocolor=white)](https://www.linkedin.com/in/elsayed-elmandoh-b5849a1b8/)
-[![linkedin-post](https://img.shields.io/badge/linkedin%20post-0077b5?style=for-the-badge&logo=linkedin&logocolor=white)](https://www.linkedin.com/posts/elsayed-elmandoh-b5849a1b8_can-an-air-gapped-ai-tutor-answer-curriculum-activity-7438317665930067968-tdof?utm_source=share&utm_medium=member_desktop&rcm=acoaadkeevqbht4xomwiqtxdmyqjijs81wue3sc)
-
-<p align="center">
-  <img src="docs/results/res1.png" alt="project name — pos results" width="45%">
-  &nbsp; &nbsp;
-  <img src="docs/results/res2.png" alt="project name — neg results" width="45%">
-</p>
-
+- elsayed elmandoh - ai engineer - [linkedin](https://www.linkedin.com/in/nataliemonged/)
+- elsayed elmandoh - ai engineer - [linktree](https://linktr.ee/elsayedelmandoh)
+- elsayed elmandoh - ai engineer - [linkedin](https://www.linkedin.com/in/manar-elshenawy-/)
 ---
 
-*project for cisc 886 - cloud computing*
+*project for cisc8868 - cloud computing - queen's university, canada | may 2026*
