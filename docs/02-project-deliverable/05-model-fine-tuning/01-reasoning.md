@@ -25,7 +25,7 @@
 | Gradient Checkpointing | unsloth |
 | Random Seed | 3407 |
 | Gradient Accumulation | 4 |
-| Warmup Steps | 100 |
+| Warmup Steps | 5 |
 
 ## training configuration
 
