@@ -434,7 +434,7 @@ covers deploying fine-tuned model on ec2 using ollama for local inference.
 - api base: `http://localhost:11434`
 - model name: 25xrvl-codegpt
 - model file: 25xrvl-tinyllama-codegpt-q4_k_m.gguf
-- s3 bucket (models): 25xrvl-s3-project
+- s3 bucket (models): 25xrvl-s3
 
 **documentation**:
 - `docs/02-project-deliverable/06-model-deployment-on-ec2/01-reasoning.md`
@@ -510,7 +510,7 @@ terraform configuration for aws infrastructure including vpc, subnets, security 
 the project uses the bigcode/the-stack-smol dataset stored in s3:
 - raw data: `s3://25xrvl-s3/smol_ids_data/`
 - processed data: `s3://25xrvl-s3/processed/{train,val,test}/`
-- models: `s3://25xrvl-s3-project/models/25xrvl-tinyllama-codegpt-q4_k_m.gguf`
+- models: `s3://25xrvl-s3/models/25xrvl-tinyllama-codegpt-q4_k_m.gguf`
 
 ---
 
@@ -620,8 +620,7 @@ python-dotenv>=1.0.0
 
 | service | purpose | configuration |
 |---------|---------|---------------|
-| s3 | data storage | bucket: 25xrvl-s3 |
-| s3 | model storage | bucket: 25xrvl-s3 |
+| s3 | data and model storage | bucket: 25xrvl-s3 |
 | emr | spark preprocessing | cluster: 25xrvl-emr-final |
 | ec2 | model serving | instance: t3.2xlarge |
 | vpc | networking | cidr: 10.0.0.0/16 |

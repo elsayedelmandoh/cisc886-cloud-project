@@ -8,7 +8,10 @@
 
 ## size
 
-- Total samples: ~300K code samples
+- Total raw samples: ~300K code samples
+- After preprocessing (language filter, content length, license, deduplication):
+  - Training samples: 23,860
+  - Validation samples: 2,983
 - Languages included: Python, JavaScript, Java, Go
 
 ## schema

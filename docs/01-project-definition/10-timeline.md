@@ -16,9 +16,9 @@
 | Task | Owner | Deliverable |
 |------|-------|------------|
 | Upload data to S3 | Member 2 | S3 files |
-| Launch EMR cluster | Member 1 | EMR console screenshot |
+| Launch EMR cluster (25xrvl-emr-final) | Member 1 | EMR console screenshot |
 | Run PySpark preprocessing | Member 2 | Preprocessed output in S3 |
-| Terminate EMR cluster | Member 1 | Teardown screenshot |
+| Terminate EMR cluster | Member 1 | Teardown screenshot (required) |
 
 ### Day 3: Model Fine-tuning
 
@@ -34,7 +34,7 @@
 |------|-------|-------------|
 | Export to GGUF | Member 3 | GGUF file |
 | Upload to S3 | Member 3 | S3 GGUF file |
-| Launch EC2 g4dn.xlarge | Member 1 | Instance running |
+| Launch EC2 t3.2xlarge | Member 1 | Instance running |
 | Install Ollama + load model | Member 1 | Ollama serving |
 | Setup OpenWebUI | Member 2 | Web interface |
 

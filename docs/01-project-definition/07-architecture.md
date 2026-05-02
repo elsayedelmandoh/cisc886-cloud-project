@@ -17,7 +17,7 @@
                                         |
                                         v
                               +-------------------+
-                              |   EC2 (g4dn.xlarge)|
+                              |   EC2 (t3.2xlarge)|
                               |   + Ollama        |
                               |   + OpenWebUI    |
                               +-------------------+
@@ -25,12 +25,13 @@
                                         |
                               +-------------------+
                               |   S3 Bucket       |
-                              |   25xrvl-s3-project   |
+                              |   25xrvl-s3        |
                               +-------------------+
                                         ^
                                         |
                               +-------------------+
                               |   EMR Cluster     |
+                              |   25xrvl-emr-final |
                               |   (PySpark)        |
                               +-------------------+
 ```
@@ -47,9 +48,9 @@
 
 ## where state lives
 
-- **Model weights**: S3 bucket (25xrvl-s3-project)
-- **Training data**: S3 preprocessed
-- **LoRA adapters**: Saved locally then uploaded
+- **Model weights**: S3 bucket (25xrvl-s3/models/)
+- **Training data**: S3 preprocessed (25xrvl-s3/processed/)
+- **LoRA adapters**: Saved locally then uploaded to S3
 - **Configuration**: AWS tags and environment variables
 
 ## failure points

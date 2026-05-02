@@ -14,8 +14,8 @@ Build and deploy a cloud-based autonomous tech support and coding assistant by f
 | Deployable format | GGUF for Ollama |
 | Web interface | OpenWebUI accessible via browser |
 | VPC with proper networking | 25xrvl-VPC with public/private subnets |
-| EMR preprocessing | PySpark pipeline on AWS EMR |
-| EC2 deployment | g4dn.xlarge instance with Ollama |
+| EMR preprocessing | PySpark pipeline on AWS EMR (25xrvl-emr-final) |
+| EC2 deployment | t3.2xlarge instance with Ollama |
 
 ## how you will know it worked
 

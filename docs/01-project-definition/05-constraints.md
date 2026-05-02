@@ -21,7 +21,8 @@
 ## deployment constraints
 
 - Must prefix all AWS resources with 25xrvl
-- EC2 g4dn.xlarge for GPU inference
+- EC2 t3.2xlarge for model serving
+- EMR cluster name: 25xrvl-emr-final (must terminate after use)
 - Ollama for model serving
 
 ## timeline constraints

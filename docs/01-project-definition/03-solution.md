@@ -20,3 +20,15 @@ A cloud-based autonomous tech support and coding assistant that provides instant
 4. **Deployment**: Export to GGUF format for Ollama serving on EC2
 5. **Interface**: OpenWebUI for browser-based chat
 
+## training results
+
+| metric | value |
+|--------|-------|
+| training samples | 23,860 |
+| validation samples | 2,983 |
+| total steps | 4,476 |
+| training time | ~6 hours (colab t4) |
+| initial loss | 1.13 |
+| final loss | ~0.60 |
+| trainable parameters | 1.13% (12.6m / 1.1b) |
+
