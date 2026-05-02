@@ -60,7 +60,6 @@ cisc886-cloud-project/
 ├── .env.example                    # example environment variables
 ├── .gitignore                      # git ignore rules
 ├── license                         # project license
-├── agents.md                       # agent guidance for development
 │
 ├── src/                            # source code modules
 │   ├── __init__.py
@@ -70,9 +69,9 @@ cisc886-cloud-project/
 │   ├── utils/
 │   │   ├── __init__.py
 │   │   ├── helpers.py              # shared helper functions
-│   │   ├── upload_data_to_s3.py   # s3 upload utilities
-│   │   └── pdf_to_md.py            # pdf conversion utilities
+│   │   └── upload_data_to_s3.py    # s3 upload utilities
 │   ├── preprocessing/
+│       ├── __init__.py
 │   │   └── preprocess_emr.py       # emr preprocessing scripts
 │   └── infrastructure/
 │       ├── __init__.py
