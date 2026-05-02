@@ -231,7 +231,8 @@ configuration is managed through environment variables in the `.env` file. all s
 
 | variable | default | description |
 |----------|---------|-------------|
-| `ec2_instance_type` | g4dn.xlarge | ec2 instance type for model serving |
+| `ec2_instance_name` | 25xrvl-ec2 | ec2 instance name |
+| `ec2_instance_type` | t3.2xlarge | ec2 instance type for model serving |
 | `ec2_ami` | deep learning ami (ubuntu 20.04) | ami for ec2 |
 | `ec2_storage_gb` | 100 | storage size in gb |
 | `ec2_volume_type` | gp3 | volume type |
@@ -240,9 +241,10 @@ configuration is managed through environment variables in the `.env` file. all s
 
 | variable | default | description |
 |----------|---------|-------------|
-| `emr_cluster_name` | 25xrvl-emr-cluster | emr cluster name |
-| `emr_instance_type` | m5.xlarge | instance type |
+| `emr_cluster_name` | 25xrvl-emr-final | emr cluster name |
+| `emr_instance_type` | m5.xlarge | instance type (master + core) |
 | `emr_num_core_nodes` | 2 | number of core nodes |
+| `emr_total_nodes` | 3 | total nodes (1 master + 2 core) |
 | `emr_release` | emr-7.2.0 | emr release version |
 
 ### 4.4 model configuration
@@ -430,6 +432,8 @@ covers deploying fine-tuned model on ec2 using ollama for local inference.
 - ollama port: 11434 (default)
 - api base: `http://localhost:11434`
 - model name: 25xrvl-codegpt
+- model file: 25xrvl-tinyllama-codegpt-q4_k_m.gguf
+- s3 bucket (models): 25xrvl-s3-project
 
 **documentation**:
 - `docs/02-project-deliverable/06-model-deployment-on-ec2/01-reasoning.md`
@@ -498,20 +502,14 @@ terraform configuration for aws infrastructure including vpc, subnets, security 
 | directory | path | description |
 |-----------|------|-------------|
 | root | `data/` | base data directory |
-| raw | `data/raw/` | raw data storage |
-| processed | `data/processed/` | processed datasets |
-| models | `data/models/` | stored model files |
-| predictions | `data/predictions/` | model predictions |
-| samples | `data/samples/` | sample data |
-| vectorizers | `data/vectorizers/` | vectorizer files |
-| remote_cache | `data/remote_cache/` | cached remote data |
+| raw | `data/smol_ids_data/` | raw data storage |
 
 ### 8.1 dataset storage
 
 the project uses the bigcode/the-stack-smol dataset stored in s3:
 - raw data: `s3://25xrvl-s3/smol_ids_data/`
 - processed data: `s3://25xrvl-s3/processed/{train,val,test}/`
-- models: `s3://25xrvl-s3/models/`
+- models: `s3://25xrvl-s3-project/models/25xrvl-tinyllama-codegpt-q4_k_m.gguf`
 
 ---
 
@@ -621,9 +619,10 @@ python-dotenv>=1.0.0
 
 | service | purpose | configuration |
 |---------|---------|---------------|
-| s3 | data and model storage | bucket: 25xrvl-s3 |
-| emr | spark preprocessing | cluster: 25xrvl-emr-cluster |
-| ec2 | model serving | instance: g4dn.xlarge |
+| s3 | data storage | bucket: 25xrvl-s3 |
+| s3 | model storage | bucket: 25xrvl-s3 |
+| emr | spark preprocessing | cluster: 25xrvl-emr-final |
+| ec2 | model serving | instance: t3.2xlarge |
 | vpc | networking | cidr: 10.0.0.0/16 |
 
 ### 12.2 cloud architecture
@@ -643,7 +642,7 @@ python-dotenv>=1.0.0
                                         |
                                         v
                               +-------------------+
-                              |   ec2 (g4dn.xlarge)|
+                              |   ec2 (t3.2xlarge)|
                               |   + ollama        |
                               |   + openwebui    |
                               +-------------------+
@@ -681,7 +680,7 @@ python-dotenv>=1.0.0
 |----------|-------|
 | name | bigcode/the-stack-smol |
 | dataset id | bigcode/the-stack-v2-train-smol-ids |
-| languages | python, javascript, java, go |
+| languages | python, javascript, go |
 | min content length | 50 |
 
 ### 13.3 fine-tuning configuration
