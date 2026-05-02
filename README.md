@@ -27,9 +27,10 @@
 12. [cloud services](#12-cloud-services)
 13. [model and dataset](#13-model-and-dataset)
 14. [troubleshooting](#14-troubleshooting)
-15. [additional resources](#15-additional-resources)
-16. [contributing](#contributing)
-17. [author](#author)
+15. [aws cost summary](#15-aws-cost-summary)
+16. [additional resources](#16-additional-resources)
+17. [contributing](#contributing)
+18. [author](#author)
 
 ---
 
@@ -696,6 +697,20 @@ python-dotenv>=1.0.0
 | gradient checkpointing | unsloth |
 | random seed | 3407 |
 
+### 13.4 training results
+
+| metric | value |
+|--------|-------|
+| training samples | 23,860 |
+| validation samples | 2,983 |
+| total steps | 4,476 |
+| training time | ~6 hours (colab t4) |
+| initial loss | 1.13 |
+| final loss | ~0.60 |
+| trainable parameters | 1.13% (12.6m / 1.1b) |
+
+**training loss curve**: see notebook `notebooks/05-model-fine-tuning/01-fine-tuning.ipynb` for step-by-step loss values (decreasing from ~1.13 to ~0.60)
+
 ---
 
 ## 14. troubleshooting
@@ -736,7 +751,27 @@ python app.py config
 
 ---
 
-## 15. additional resources
+## 15. aws cost summary
+
+| service | usage description | free tier status | estimated cost |
+|---------|-------------------|------------------|----------------|
+| amazon ec2 | hosting ollama, openwebui, docker containers | covered (750 hours/month) | $0.00 |
+| amazon emr | large-scale data processing and cluster management | not free tier (m5.xlarge typical) | $1.20 - $3.50 |
+| amazon s3 | storage for model checkpoints, datasets | covered (up to 5gb) | $0.00 |
+| aws iam | managing roles for s3 and ec2 access | always free | $0.00 |
+| ebs storage | ssd volumes for ec2 os and docker images | covered (up to 30gb) | $0.00 |
+| data transfer | egress traffic for docker pulls and web access | covered (up to 100gb) | $0.15 |
+| | | **total estimated** | **$1.35 - $3.65** |
+
+**cost optimization tips**:
+- always terminate emr cluster after preprocessing (required for grading)
+- stop ec2 instance when not in use
+- use s3 lifecycle policies for old data
+- colab free tier used for fine-tuning (no aws cost)
+
+---
+
+## 16. additional resources
 
 - final report: `docs/02-project-deliverable/final-report.docx`
 - architecture details: `docs/01-project-definition/07-architecture.md`
@@ -745,7 +780,7 @@ python app.py config
 
 ---
 
-## 16. contributing
+## 17. contributing
 
 contributions are welcome! if you would like to improve this project, please follow these steps:
 
@@ -755,7 +790,7 @@ contributions are welcome! if you would like to improve this project, please fol
 4. push to your fork (git push origin feature/my-new-feature)
 5. open a pull request.
 
-## 17. author
+## 18. author
 
 - elsayed elmandoh - ai engineer - [linkedin](https://www.linkedin.com/in/nataliemonged/)
 - elsayed elmandoh - ai engineer - [linktree](https://linktr.ee/elsayedelmandoh)
