@@ -1,7 +1,9 @@
 # cisc 886 cloud project - cloud-based conversational chatbot
 
 <p align="center">
-  <img src="notebooks/01-system-architecture/01-system-architecture-diagram.jpeg" alt="system architecture diagram" width="80%">
+  <img src="notebooks/01-system-architecture/01-system-architecture-diagram.jpeg" alt="project name — pos results" width="45%">
+  &nbsp; &nbsp;
+  <img src="notebooks/07-web-interface/07-openwebui.png" alt="project name — neg results" width="45%">
 </p>
 
 ## table of contents
