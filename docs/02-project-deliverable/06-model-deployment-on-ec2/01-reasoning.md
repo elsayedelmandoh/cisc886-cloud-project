@@ -38,16 +38,13 @@ pip install gguf sentencepiece numpy transformers torch --break-system-packages
 # Run conversion
 python3 llama.cpp/convert_hf_to_gguf.py ~/my_model --outfile ~/my_model/model_final.gguf --outtype q8_0
 
-
 # Import model to Ollama
 ollama create 25xrvl-codegpt -f Modelfile
 
 # Test
 ollama run codegpt-25xrvl "Write a hello world in Python"
 
-
 # api curl test
-
 curl http://localhost:11434/api/tags
 ```
 
