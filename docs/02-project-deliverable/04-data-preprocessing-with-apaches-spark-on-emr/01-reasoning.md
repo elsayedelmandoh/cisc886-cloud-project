@@ -4,7 +4,7 @@
 
 | Setting | Value |
 |---------|-------|
-| Cluster Name | 25xrvl-emr-sg |
+| Cluster Name | 25xrvl-emr-final |
 | Instance Type | m5.xlarge (master), m5.xlarge (core) x2 |
 | Number of Nodes | 3 |
 | Region | us-east-1 |
