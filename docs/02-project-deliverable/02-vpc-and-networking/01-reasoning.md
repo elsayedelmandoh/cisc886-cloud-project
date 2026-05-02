@@ -13,8 +13,8 @@
 
 | Subnet | CIDR | Type | Purpose |
 |--------|------|------|---------|
-| 25xrvl-public-1a | 10.0.1.0/24 | Public | EC2 instance |
-| 25xrvl-private-1a | 10.0.2.0/24 | Private | EMR cluster |
+| 25xrvl-vpcc-subnet-public1-us-east-1a | 10.0.1.0/24 | Public | EC2 instance |
+| 25xrvl-vpcc-subnet-private1-us-east-1a | 10.0.2.0/24 | Private | EMR cluster |
 | 25xrvl-emr-1a | 10.0.3.0/24 | Private | Data processing |
 
 ## security groups
